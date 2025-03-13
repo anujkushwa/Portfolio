@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Reach Out for Web Development Services</title>
+    <meta name="description"
+        content="Contact us to collaborate on innovative web development projects. Share your ideas, budget, and requirements through our user-friendly form.">
+    <meta name="keywords"
+        content="contact form, web development, work with us, collaborate, web solutions, Anuj Kushwaha">
+    <meta property="og:title" content="Contact Us | Reach Out for Web Development Services">
+    <meta property="og:description"
+        content="Share your ideas, budget, and requirements through our user-friendly form.">
+    <meta property="og:image" content="/images/contact-thumbnail.jpg">
+    <meta property="og:url" content="https://www.yourwebsite.com/contact-us">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact Us | Reach Out for Web Development Services">
+    <meta name="twitter:description"
+        content="Share your ideas, budget, and requirements through our user-friendly form.">
+    <meta name="twitter:image" content="/images/contact-thumbnail.jpg">
+    <link rel="stylesheet" href="req.css">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Anuj Kushwaha",
+      "url": "https://www.yourwebsite.com",
+      "sameAs": [
+        "https://www.linkedin.com/in/anujkushwaha",
+        "https://www.facebook.com/anujkushwaha",
+        "https://www.instagram.com/anujkushwaha",
+        "https://www.twitter.com/anujkushwaha"
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "mainEntity": {
+        "@type": "ContactForm",
+        "name": "Contact Us Form",
+        "description": "Fill out this form to connect with us for web development projects."
+      }
+    }
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Contact-us</div>
+        <nav>
+            <ul id="nav-links" class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">About</a></li>
+                <li><a href="index.html">Services</a></li>
+                <li><a href="index.html">Project</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="big">
+
+        <div class="left">
+            <div class="form-container">
+                <h1>WANT TO WORK WITH US?</h1>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Name*" required>
+                        <input type="email" name="email" placeholder="Email*" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="interested" placeholder="Interested">
+                        <input type="text" name="budget" placeholder="Your budget">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="subject" placeholder="Subject">
+                        <input type="tel" name="phone" placeholder="Phone">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Message"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">SEND</button>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="right">
+            <div class="ani">
+                <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+                    type="module"></script>
+                <dotlottie-player src="https://lottie.host/e6b1b63e-a9a0-492a-9bc4-b2401a03028b/x0Bq7agbEG.lottie"
+                    background="transparent" speed="1" style="width: 300px; height: 300px" loop
+                    autoplay></dotlottie-player>
+                <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+                    type="module"></script>
+                <dotlottie-player src="https://lottie.host/4cbc3e7f-823d-4146-94fb-f43ab0283f7d/vlx2Uc66us.lottie"
+                    background="transparent" speed=".6" style="width: 300px; height: 300px" loop
+                    autoplay></dotlottie-player>
+            </div>
+
+            <footer>
+                <div class="footer-content">
+                    <div class="footer-left">
+                        <h2>Anuj Kushwaha</h2>
+                        <p>Passionate developer with a knack for creating <br>innovative web solutions. Dedicated to
+                            delivering
+                            <br> quality, creativity, and seamless user experiences.
+                        </p>
+                    </div>
+                    <div class="footer-right">
+                        <ul>
+                            <li><a href="https://www.linkedin.com/in/anuj-maurya-526388245/">Linkdin</a></li>
+                            <li><a href="https://www.facebook.com/anuj.maurya.7355079">Facebook</a></li>
+                            <li><a href="https://www.instagram.com/codenlearn_/">Instagram</a></li>
+                            <li><a href="https://x.com/anuj_kushwaha0">Twitter</a></li>
+                        </ul>
+                        <p>anujkushwaha | © Copyright 2024 All rights reserved</p>
+                    </div>
+                </div>
+                <div class="footer-wave"></div>
+            </footer>
+        </div>
+    </div>
+
+
+    <script>
+
+        function toggleMenu() {
+            const navLinks = document.getElementById('nav-links');
+            const hamburger = document.querySelector('.hamburger');
+            navLinks.classList.toggle('show');
+            hamburger.classList.toggle('active');
+        }
+
+
+
+        document.getElementById("contact-form").addEventListener("submit", function (e) {
+            e.preventDefault();
+            alert("Form submitted successfully!");
+        });
+    </script>
+</body>
+
+</html>
